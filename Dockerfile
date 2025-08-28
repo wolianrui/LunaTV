@@ -51,7 +51,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 # 切换到非特权用户
-USER nextjs
+# USER nextjs
 
 EXPOSE 3000
 
